@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Holidays!</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Work+Sans:900' rel='stylesheet' type='text/css'>
+<style>
+html {
+height: 100%;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
+font-size: 1vw;
+margin: 0;
+padding: 0;
+background: -webkit-linear-gradient(#ff1a1a, #9F000F);
+background: -o-linear-gradient(#ff1a1a, #9F000F);
+background: -moz-linear-gradient(#ff1a1a, #9F000F);
+background: linear-gradient(#ff1a1a, #9F000F);
+text-align: center; 
+}
+h1 {
+font-family: 'Work Sans', 'Helvetica Neue', helvetica, arial, sans-serif;
+font-weight: normal;
+color: #00592D;
+font-size: 32pt;
+font-size: 6vw;
+text-transform: uppercase;
+}
+h1 a {
+text-decoration: none;
+color: #222;
+}
+h1 a:active {
+color: red;
+}
+footer {
+position: absolute;
+height: 60px;
+bottom: 0px;
+width: 100%;
+color: white;
+font-size: 9pt;
+text-align: center;
+}
+footer a, footer a:visited {
+color: white;
+text-decoration: underline;
+}
+footer a:hover {
+color: silver;
+text-decoration: none;
+}
+footer marquee {
+color: red;
+padding: 1em 0 1em 0;
+}
+</style>
+</head>
+<body>
+
+<h1 id="t">Happy Holidays!</h1>
+
+<footer>
+Not affiliated with <a href="http://www.starbucks.com">Starbucks</a>.
+Not copyrighted.
+<marquee>Oh, for Peet's sake!</marquee>
+</footer>
+</body>
+</html>
+<script type="text/javascript">
+function setTitle(){
+var titles = [
+"It's just red.<br>Really.",
+"Merry Christmas!",
+"Happy Hannukah!",
+"Happy Kwanzaa!",
+"Happy Festivus!",
+"Have a nice winter!",
+"Gaudeamus!",
+"Be of good cheer anyway",
+"Feliz Navidad!",
+"Joyeux No&euml;l!",
+"Gl&aelig;delig Jul!",
+"God Jul!",
+"Frohe Weihnachten!",
+"Buon Natale!",
+"Gese&euml;nde Kersfees!",
+"Vrolijk Kerstfeest!",
+"Have a nice cup of coffee",
+"Hyv&auml;&auml; Joulua"
+];
+document.getElementById("t").innerHTML = titles[Math.floor(Math.random() * titles.length)];
+setTimeout("setTitle()",20000);
+}
+window.onload=setTitle();
+</script>
