@@ -96,7 +96,7 @@ var titles = [
 "Hyv&auml;&auml; Joulua"
 ];
 document.getElementById("t").innerHTML = titles[Math.floor(Math.random() * titles.length)];
-setTimeout("setTitle()",20000);
+setTimeout("setTitle()",5000+Math.floor(Math.random()*15000));
 }
 window.onload=setTitle();
 </script>
